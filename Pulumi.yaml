@@ -1,0 +1,3 @@
+name: sst-eks-surrealdb
+runtime: nodejs
+description: Automated Pulumi / SST deployment for SurrealDB on TiKV on AWS EKS

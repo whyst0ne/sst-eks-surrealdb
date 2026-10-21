@@ -4,8 +4,9 @@
   "description": "SST/Pulumi deployment script for SurrealDB on TiKV",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node --test",
     "deploy": "sst deploy",
+    "deploy:pulumi": "pulumi up",
     "remove": "sst remove"
   },
   "keywords": [
@@ -19,6 +20,10 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "@pulumi/aws": "^6.28.0",
+    "@pulumi/eks": "^2.6.0",
+    "@pulumi/kubernetes": "^4.10.0",
+    "@pulumi/pulumi": "^3.112.0",
     "aws-cdk-lib": "^2.124.0",
     "constructs": "^10.3.0",
     "sst": "^2.40.1"
